@@ -1,0 +1,286 @@
+
+.how__title {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.how__list {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.how__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+  color: #333333;
+  transition: color 0.5s ;
+}
+
+.how__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.how__btn {
+  color: #333333;
+  outline: none;
+  transition: all .36s ease-in;
+}
+
+.how__btn:focus {
+  outline: 2px solid #FF9900;
+  transition: outline .36s ease-in;
+}
+
+.how__btn:hover {
+  color: #FF9900;
+  outline: none;
+  transition: all .36s ease-in;
+}
+
+.how__btn:active {
+  color: #E1670E;
+  outline: none;
+  transition: all .36s ease-in
+}
+
+.how-decscr__tittle {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.how__paragraph {
+  margin: 0;
+  margin-bottom: 50px;
+  width: 89%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.how__btn-more {
+  margin-right: 27px;
+  padding: 20px 38px;
+  background-color: #FF9900;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.how__btn-more:focus,
+.how__btn-more:hover {
+  background-color: #F7B045;
+  border: none;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.how__btn-more:active{
+  background-color: #E1670E;
+  border: none;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.how__btn-contract {
+  padding: 20px 38px;
+  border: 1px solid #333333;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.how__btn-contract:focus,
+.how__btn-contract:hover {
+  background-color: #666666;
+  color: #FFFFFF;
+  border: 1px solid #666666;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.how__btn-contract:active{
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #666666;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.how__wrapper {
+  line-height: 2em;
+  justify-content: space-between;
+}
+
+.how__wrapper::after {
+  content: '';
+  width: 49%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.how__wrapper__one::after {
+  background-image: url(../img/how_img.jpg);
+}
+
+.how__wrapper__two::after {
+  background-image: url(../img/how_img_2.jpg);
+}
+
+.how__wrapper__three::after {
+  background-image: url(../img/how_img_3.jpg);
+}
+
+.how__wrapper__four::after {
+  background-image: url(../img/how_img_4.jpg);
+}
+
+.how__content {
+  width: 49%;
+}
+
+.tabs-nav__btn--active {
+  color: #E1670E
+}
+
+.tabs-item {
+  display: none;
+}
+
+.tabs-item--active {
+  display: block;
+}
+  
+
+@media (max-width: 1024px) {
+  .how__paragraph {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .how__list {
+    margin-bottom: 50px;
+  }
+
+  .how__title {
+    margin-bottom: 48px;
+  }
+
+  .how__item:not(:last-child) {
+    margin-right: 86px;
+  }
+
+  .how__wrapper::after {
+    width: 47%;
+  }
+}
+
+@media (max-width: 768px) {
+ .how__wrapper {
+   flex-direction: column;
+ }
+
+ .how__content {
+   width: 100%;
+  }
+
+  .how__wrapper::after {
+    order: -1;
+    height: 284px;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 38px;
+  }
+
+  .how__list {
+    justify-content: space-between;
+  }
+
+  .how__item {
+    margin: 0;
+  }
+
+  .how__btn-more {
+    margin: 0;
+    margin-right: 28px;
+  }
+
+  .how__btn-contract {
+    padding: 19px 37px;
+  }
+
+  .how__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .how__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how__btn-more {
+    padding: 14px 44px;
+    margin-right: 6px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .how__btn-contract {
+    padding: 14px 31px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .how__title {
+    margin-bottom: 16px;
+  }
+
+  .how__list {
+    margin-bottom: 16px;
+  }
+
+  .how__btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how-decscr__tittle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .how__paragraph {
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how__wrapper::after {
+    height: 160px;
+    margin-bottom: 18px;
+  }
+}
